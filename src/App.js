@@ -13,7 +13,7 @@ function App() {
     </div>
   );
 }
-console.log("Работа приложения успешна")
+console.log("Работа приложения успешна!")
 export default App;
 
 
