@@ -1,0 +1,8 @@
+# Исключение папки node_modules в директории 99-template
+
+node_modules/
+build/
+dist/
+.env
+*.log
+.DS_Store
