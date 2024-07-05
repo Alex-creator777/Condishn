@@ -6,4 +6,5 @@ function MyComponent() {
       </div>
     )
   }
+  console.log('Функция успешна')
   export default MyComponent
