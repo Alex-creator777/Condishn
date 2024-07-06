@@ -2,7 +2,7 @@ import './App.css';
 import MyComponent from './components/MyComponent';
 import OtherComponent from './components/OtherComponent';
 import PetInfo from './components/Petinfo';
-
+import RandomNumber from './components/RandomNumber';
 function App() {
   return (
     <div className="App">
@@ -10,6 +10,7 @@ function App() {
       <OtherComponent />
       <PetInfo animal="cat" age="4" hasPet/>
       <PetInfo animal="dog" age="7" hasPet={false}/>
+      <RandomNumber maxNum = {1000}/>
     </div>
   );
 }
