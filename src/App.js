@@ -7,10 +7,11 @@ import RandomNumber from './components/RandomNumber'
 import Counter from './components/Counter'
 import Button from './components/Button'
 import PersonsList from './components/PersonsList'
-
+import ResetButton from './components/Resetbutton'
+import Card from './components/Cards'
 //ниже сколько элементов в массиве столько будет и кнопок
 const texts = ['click me', 'Click me please', 'Hit me', 'Press me']
-const buttonStyle = { backgroundColor: 'lightgreen' }
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -37,13 +38,7 @@ function App() {
       {texts.map((text, index) => {
         return <Button key={index} onClick={incrementCount} text={text} />
       })}
-      {count > 0 && (
-        <div>
-          <button style={buttonStyle} onClick={resetCount}>
-            Reset
-          </button>
-        </div>
-      )}
+      <ResetButton count={count} resetCount={resetCount}/>
 {/* {count > 0 && (
         <div>
           <button style={buttonStyle} onClick={resetCount}>
@@ -52,6 +47,7 @@ function App() {
         </div>
       ) Оператор И заменяет здесь Если. Если count > 0 то код читается дальше и выполняется - появляется кнопка. В противном случае - код дальше не читается.  */}
       <PersonsList />
+      <Card/>
     </div>
   )
 }
