@@ -10,12 +10,17 @@ import PersonsList from './components/PersonsList'
 
 //ниже сколько элементов в массиве столько будет и кнопок
 const texts = ['click me', 'Click me please', 'Hit me', 'Press me']
+const buttonStyle = { backgroundColor: 'lightgreen' }
 
 function App() {
   const [count, setCount] = useState(0)
   const incrementCount = () => {
     setCount(count + 1)
   }
+  const resetCount = () => {
+    setCount(0)
+  }
+
   return (
     <div className="App">
       <MyComponent />
@@ -32,11 +37,24 @@ function App() {
       {texts.map((text, index) => {
         return <Button key={index} onClick={incrementCount} text={text} />
       })}
+      {count > 0 && (
+        <div>
+          <button style={buttonStyle} onClick={resetCount}>
+            Reset
+          </button>
+        </div>
+      )}
+{/* {count > 0 && (
+        <div>
+          <button style={buttonStyle} onClick={resetCount}>
+            Reset
+          </button>
+        </div>
+      ) Оператор И заменяет здесь Если. Если count > 0 то код читается дальше и выполняется - появляется кнопка. В противном случае - код дальше не читается.  */}
       <PersonsList />
     </div>
   )
 }
-
 
 // почему в данном случае если бы название кнопок было одинаковым то обязательно было бы использование в map еще и key. texts.map((text, index) => { return <Button onClick={incrementCount} text={text} key = {index} В React, когда вы рендерите списки компонентов с помощью метода map, важно использовать уникальный ключ (key)  для каждого элемента. Это помогает React эффективно обновлять и рендерить компоненты. Если у вас есть несколько элементов с одинаковым содержимым, использование уникальных ключей становится еще более важным, так как React использует ключи для отслеживания изменений в списке.
 // Ключи помогают React определить, какие элементы были изменены, добавлены или удалены.
