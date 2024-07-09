@@ -9,6 +9,7 @@ import Button from './components/Button'
 import PersonsList from './components/PersonsList'
 import ResetButton from './components/Resetbutton'
 import Card from './components/Cards'
+import Login from './components/Login'
 //ниже сколько элементов в массиве столько будет и кнопок
 const texts = ['click me', 'Click me please', 'Hit me', 'Press me']
 
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <div className="App">
+      <Login/>
       <MyComponent />
       <OtherComponent />
       <PetInfo animal="cat" age="4" hasPet />
