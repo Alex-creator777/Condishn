@@ -10,6 +10,7 @@ import PersonsList from './components/PersonsList'
 import ResetButton from './components/Resetbutton'
 import Card from './components/Cards'
 import Login from './components/Login'
+import Wrapper from './components/wrapper'
 //ниже сколько элементов в массиве столько будет и кнопок
 const texts = ['click me', 'Click me please', 'Hit me', 'Press me']
 
@@ -41,15 +42,17 @@ function App() {
         return <Button key={index} onClick={incrementCount} text={text} />
       })}
       <ResetButton count={count} resetCount={resetCount}/>
-{/* {count > 0 && (
-        <div>
-          <button style={buttonStyle} onClick={resetCount}>
-            Reset
-          </button>
-        </div>
-      ) Оператор И заменяет здесь Если. Если count > 0 то код читается дальше и выполняется - появляется кнопка. В противном случае - код дальше не читается.  */}
       <PersonsList />
       <Card/>
+      <Wrapper color="Lightblue"> 
+        <h2> Text inside of the Wrapper</h2>
+        <button>Click me!</button>
+      </Wrapper>
+      <Wrapper color="Lightgreen"> 
+        <h2> Another Text </h2>
+        <p>Some description</p>
+        <input type="text" placeholder="Enter value" style={{ width: '100%' }} />
+      </Wrapper>
     </div>
   )
 }

@@ -17,48 +17,7 @@ const persons =
   "lastName": "Lovart",
   "email": "tlovart2@discovery.com",
   "img": "http://dummyimage.com/200x100.png/ff4444/ffffff"
-}, {
-  "id": 4,
-  "firstName": "Gweneth",
-  "lastName": "Gopsill",
-  "email": "ggopsill3@dailymotion.com",
-  "img": "http://dummyimage.com/200x100.png/5fa2dd/ffffff"
-}, {
-  "id": 5,
-  "firstName": "Rocky",
-  "lastName": "Clatworthy",
-  "email": "rclatworthy4@goo.ne.jp",
-  "img": "http://dummyimage.com/200x100.png/cc0000/ffffff"
-}, {
-  "id": 6,
-  "firstName": "Pamelina",
-  "lastName": "Cockram",
-  "email": "pcockram5@cdc.gov",
-  "img": "http://dummyimage.com/200x100.png/cc0000/ffffff"
-}, {
-  "id": 7,
-  "firstName": "Eirena",
-  "lastName": "Heam",
-  "email": "eheam6@netlog.com",
-  "img": "http://dummyimage.com/200x100.png/ff4444/ffffff"
-}, {
-  "id": 8,
-  "firstName": "Emmy",
-  "lastName": "Laughnan",
-  "email": "elaughnan7@xrea.com",
-  "img": "http://dummyimage.com/200x100.png/dddddd/000000"
-}, {
-  "id": 9,
-  "firstName": "Cathi",
-  "lastName": "Fibbit",
-  "email": "cfibbit8@sfgate.com",
-  "img": "http://dummyimage.com/200x100.png/5fa2dd/ffffff"
-}, {
-  "id": 10,
-  "firstName": "Lyman",
-  "lastName": "Greedy",
-  "email": "lgreedy9@dell.com",
-  "img": "http://dummyimage.com/200x100.png/dddddd/000000"
-} ]
+}
+ ]
 
 export default persons
