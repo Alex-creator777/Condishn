@@ -11,6 +11,8 @@ import ResetButton from './components/Resetbutton'
 import Card from './components/Cards'
 import Login from './components/Login'
 import Wrapper from './components/wrapper'
+import Posts from './components/Posts'
+import Info from './components/info'
 //ниже сколько элементов в массиве столько будет и кнопок
 const texts = ['click me', 'Click me please', 'Hit me', 'Press me']
 
@@ -39,7 +41,7 @@ function App() {
       <Button onClick={incrementCount} text = {texts[3]}/>
     </div> можно реализовать тоже самое на с помощью метода map */}
       {texts.map((text, index) => {
-        return <Button key={index} onClick={incrementCount} text={text} />
+        return <Button  key={index} onClick={incrementCount} text={text} />
       })}
       <ResetButton count={count} resetCount={resetCount}/>
       <PersonsList />
@@ -53,6 +55,8 @@ function App() {
         <p>Some description</p>
         <input type="text" placeholder="Enter value" style={{ width: '100%' }} />
       </Wrapper>
+      <Info/>
+      <Posts/>
     </div>
   )
 }
